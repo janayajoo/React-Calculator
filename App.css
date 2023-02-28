@@ -1,0 +1,66 @@
+:root{
+    --color-primary: #111;
+    --color-secondary: rgb(141, 230, 255);
+    --color-white: #ffffff;
+    --color-black: #000;
+}
+
+.calculadora{
+    border-radius: 1rem;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    box-sizing: border-box;    
+    text-align: center;
+    position: relative;
+}
+
+::placeholder{
+    color: var(--color-white);
+}
+
+#resultado {
+    padding-left: 30px;
+}
+
+.display-box{
+    color: var(--color-white);
+    margin: 0.5rem 0.2rem;
+    width: 85%;
+}
+
+.zero-number{
+    width: 100%;
+}
+
+.igual{
+    height: 10rem;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+input{
+    background-color: grey;
+    margin: 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: 1px solid black;
+}
+
+.no-numeros{
+    font-size: 1.2rem;
+    color: red;
+}
+
+.numero{
+    font-size: 1.1rem;
+    color: aqua;
+}
+
+input:hover{
+    background-color: lightblue;
+}

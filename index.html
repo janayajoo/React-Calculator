@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <table class="calculadora" >
+        <tr>
+            <td colspan="4"> <input class="display-box" type="text" id="resultado" disabled placeholder="Ingrese numeros..."/> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="C" onclick="limpiar()" id="btn" class="no-numeros"/> </td>            
+            <td> <input type="button" value="X" onclick="borrar()" id="btn" class="no-numeros"/> </td>
+            <td> <input type="button" value="*" onclick="mostrar('*')" id="btn" class="no-numeros"/> </td>            
+            <td> <input type="button" value="/" onclick="mostrar('/')" class="no-numeros"/> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="mostrar('7')" class="numero"/> </td>
+            <td> <input type="button" value="8" onclick="mostrar('8')" class="numero"/> </td>
+            <td> <input type="button" value="9" onclick="mostrar('9')" class="numero"/> </td>            
+            <td> <input type="button" value="-" onclick="mostrar('-')" class="no-numeros"/> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="mostrar('4')" class="numero"/> </td>
+            <td> <input type="button" value="5" onclick="mostrar('5')" class="numero"/> </td>
+            <td> <input type="button" value="6" onclick="mostrar('6')" class="numero"/> </td>            
+            <td> <input type="button" value="+" onclick="mostrar('+')" class="no-numeros"/> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="mostrar('1')" class="numero"/> </td>
+            <td> <input type="button" value="2" onclick="mostrar('2')" class="numero"/> </td>
+            <td> <input type="button" value="3" onclick="mostrar('3')" class="numero"/> </td>
+            <td rowspan="2"> <input class="igual no-numeros" type="button" value="=" onclick="calcular()" id="btn" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2"> <input class="zero-number numero" type="button" value="0" onclick="mostrar('0')" /> </td>
+            <td> <input type="button" value="." onclick="mostrar('.')" class="no-numeros"/> </td>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
